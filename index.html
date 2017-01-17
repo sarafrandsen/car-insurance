@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="jquery-3.1.1.js"></script>
+    <script src="scripts.js"></script>
+    <title>Car Insurance</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Car Insurance</h1>
+      <p>To give you a quote, we need to know a little about you:</p>
+
+      <form id="insurance">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        <label for="gender">Gender Identity</label>
+        <select id="gender">
+          <option value="feminine">Feminine</option>
+          <option value="masculine">Masculine</option>
+          <option value="other">Other</option>
+        </select>
+
+        <button type="submit" class="btn">Calculate my quote</button>
+      </form>
+
+      <div id="quote">
+        <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just ride a bike or take the bus.</p>
+      </div>
+    </div>
+  </body>
+</html>
